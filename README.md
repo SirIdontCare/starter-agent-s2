@@ -1,6 +1,6 @@
-# 🤖 starter_agent — agent w stanie po Lekcji 7
+# 🤖 Starter agenta — grupa zaawansowana LABA S2
 
-To gotowy agent z kursu głównego w stanie **po Lekcji 7**: chat z narzędziami, baza Supabase, RAG (baza wiedzy), logowanie i personalizacja. — *Paweł*
+To gotowy, kompletny agent AI: chat z narzędziami, baza Supabase, RAG (baza wiedzy), logowanie i personalizacja. — *Paweł*
 
 To Twoja piaskownica: kompletny, działający agent, na którym możesz eksperymentować, psuć i naprawiać bez ryzyka dla projektu z kursu głównego.
 
@@ -19,7 +19,11 @@ Całe połączenie z modelami siedzi w jednym pliku: [`lib/openrouter.ts`](lib/o
 
 Potrzebujesz **Node.js 22+**, klucza **OpenRouter od LABA** (tego samego co w kursie) i **nowego, pustego projektu Supabase**.
 
-1. **Skopiuj ten folder w swoje miejsce na dysku** i nazwij go np. `moj-agent-zaawansowany`. Od tej chwili to Twój projekt.
+1. **Pobierz projekt** — w terminalu, w folderze, w którym trzymasz projekty:
+   ```bash
+   git clone https://github.com/SirIdontCare/starter-agent-s2.git moj-agent-zaawansowany
+   ```
+   Potem wejdź do środka: `cd moj-agent-zaawansowany`. Od tej chwili to Twój projekt.
 2. **Zainstaluj zależności** — w terminalu, w folderze projektu:
    ```bash
    npm install
@@ -34,6 +38,19 @@ Potrzebujesz **Node.js 22+**, klucza **OpenRouter od LABA** (tego samego co w ku
    Otwórz http://localhost:3000, załóż konto na stronie logowania i napisz coś do agenta.
 
 > 💡 Jeśli po rejestracji nie możesz się zalogować — Supabase domyślnie wymaga potwierdzenia adresu e-mail. Kliknij link z maila albo wyłącz to w **Authentication → Sign In / Providers → Email → Confirm email**.
+
+## Co wypróbować
+
+Wszystko jest w menu po lewej. Na początek:
+
+| W menu | Co robi |
+|---|---|
+| **Chat** | rozmowa z agentem, przełącznik Standard / Pro; rozmowy zapisują się w bazie (**Historia**) |
+| **Agent**, **ReAct**, **Podróże** | agent z narzędziami i pętlą ReAct |
+| **Szukaj** | wyszukiwanie w internecie |
+| **Baza wiedzy**, **Podgląd wiedzy** | wgrywanie dokumentów do RAG i podgląd tego, co trafiło do bazy |
+| **Vision**, **Grafiki** | analiza obrazu i generowanie grafik |
+| **Myślenie**, **Słownik AI**, **Formatowanie**, **Analizator** | techniki promptowania z kursu |
 
 ## Modele i koszty
 
